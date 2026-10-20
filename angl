@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Словарь: Механика</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #ffffff; /* Белый фон */
+            color: #000000; /* Черный текст */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 40px 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        /* Контейнер для таблиц */
+        .tables-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 800px; 
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid #000000; /* Черная рамка вокруг таблицы */
+            margin-bottom: 40px; /* Отступ между таблицами (около двух строк) */
+        }
+
+        /* Ячейки */
+        td {
+            padding: 15px 20px;
+            border: 1px solid #000000; /* Черные линии сетки */
+            cursor: pointer;
+            position: relative;
+            width: 50%;
+            vertical-align: top;
+            transition: background-color 0.2s;
+        }
+
+        /* Подсветка при наведении */
+        td:hover {
+            background-color: #e0e0e0; 
+        }
+
+        /* Текст внутри ячейки */
+        .rus {
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 4px;
+        }
+
+        .eng {
+            display: block;
+            font-size: 14px;
+            color: #000000;
+            font-style: italic;
+            padding-right: 25px; 
+        }
+
+        /* Иконка звука */
+        td::after {
+            content: '🔊';
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.3;
+            font-size: 18px;
+            transition: opacity 0.2s;
+        }
+
+        td:hover::after {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>MECHANICS VOCABULARY</h1>
+
+    <div class="tables-container">
+        
+        <!-- ПЕРВАЯ ТАБЛИЦА -->
+        <table>
+            <tbody>
+                <tr>
+                    <td><span class="rus">условие</span><span class="eng">condition</span></td>
+                    <td><span class="rus">действие</span><span class="eng">action</span></td>
+                </tr>
+                <tr>
+                    <td><span class="rus">применять</span><span class="eng">to apply</span></td>
+                    <td><span class="rus">основывать</span><span class="eng">to found</span></td>
+                </tr>
+                <tr>
+                    <td><span class="rus">пространство</span><span class="eng">space</span></td>
+                    <td><span class="rus">положение</span><span class="eng">position</span></td>
+                </tr>
+                <tr>
+                    <td><span class="rus">мера</span><span class="eng">measure</span></td>
+                    <td><span class="rus">ссылаться на</span><span class="eng">to refer to</span></td>
+                </tr>
+                <tr>
+                    <td><span class="rus">требовать</span><span class="eng">to require</span></td>
+                    <td><span class="rus">как ..., так и ...</span><span class="eng">both ... and ...</span></td>
+                </tr>
+                <tr>
+                    <td><span class="rus">использовать</span><span class="eng">to use</span></td>
+                    <td><span class="rus">сопротивляться</span><span class="eng">to resist</span></td>
+                </tr>
+                <tr>
+                    <td><span class="rus">поступательное движение</span><span class="eng">translational motion</span></td>
+                    <td><span class="rus">сила</span><span class="eng">force</span></td>
+                </tr>
+                <tr>
+                    <td><span class="rus">величина</span><span class="eng">magnitude</span></td>
+                    <td><span class="rus">направлять</span><span class="eng">to direct</span></td>
+                </tr>
+                <tr>
+                    <td><span class="rus">изменять</span><span class="eng">to vary</span></td>
+                    <td><span class="rus">скорость</span><span class="eng">velocity</span></td>
+                </tr>
+                <tr>
+                    <td><span class="rus">иметь дело с</span><span class="eng">to deal with</span></td>
+                    <td><span class="rus">количество / величина</span><span class="eng">quantity</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- ВТОРАЯ ТАБЛИЦА -->
+        <table>
+            <tbody>
+                <tr>
+                    <td><span class="rus">скорость тела</span><span class="eng">body velocity</span></td>
+                    <td><span class="rus">сопротивление изменению</span><span class="eng">resistance to change</span></td>
+                </tr>
+                <tr>
+                    <td><span class="rus">величина силы</span><span class="eng">magnitude of the force</span></td>
+                    <td><span class="rus">как сила, так и движение</span><span class="eng">both force and motion</span></td>
+                </tr>
+                <tr>
+                    <td><span class="rus">ссылаться на факт</span><span class="eng">to refer to the fact</span></td>
+                    <td><span class="rus">измерять нужное время</span><span class="eng">to measure the required time</span></td>
+                </tr>
+                <tr>
+                    <td><span class="rus">точка приложения</span><span class="eng">point of application</span></td>
+                    <td><span class="rus">прикладная наука</span><span class="eng">applied science</span></td>
+                </tr>
+                <tr>
+                    <td><span class="rus">точка отсчета координат</span><span class="eng">reference point of origin</span></td>
+                    <td><span class="rus">изменение скорости</span><span class="eng">variation of velocity</span></td>
+                </tr>
+                <tr>
+                    <td><span class="rus">состояние покоя</span><span class="eng">condition of rest</span></td>
+                    <td><span class="rus">под воздействием силы</span><span class="eng">under the action of force</span></td>
+                </tr>
+                <tr>
+                    <td><span class="rus">положение точки P</span><span class="eng">position of the point P</span></td>
+                    <td><span class="rus">направление силы</span><span class="eng">direction of the force</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <script>
+        const cells = document.querySelectorAll('td');
+
+        cells.forEach(cell => {
+            cell.addEventListener('click', function() {
+                // Получаем английский текст из ячейки
+                const englishText = this.querySelector('.eng').innerText;
+
+                // Озвучка через API Google
+                const audioUrl = `https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=en&q=${encodeURIComponent(englishText)}`;
+                
+                const audio = new Audio(audioUrl);
+                audio.play().catch(e => console.error("Ошибка воспроизведения:", e));
+            });
+        });
+    </script>
+</body>
+</html>
